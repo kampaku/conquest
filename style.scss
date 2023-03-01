@@ -1,0 +1,24 @@
+@import './styles/fonts.scss';
+@import './styles/header.scss';
+@import './styles/hero.scss';
+@import './styles/cards.scss';
+@import './styles/banner.scss';
+@import './styles/news.scss';
+@import './styles/footer.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #1b1a17;
+  min-width: 320px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1218px;
+  padding: 0 20px;
+}

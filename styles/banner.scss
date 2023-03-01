@@ -1,0 +1,72 @@
+.banner {
+  padding: 52px 0;
+  background: url("/public/banner-ellipse-1.svg") right no-repeat,
+    url("/public/banner-ellipse-2.svg") top right no-repeat,
+    linear-gradient(90deg, #f7f5ef 30%, #fdfdfb 30%);
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 70px;
+  }
+
+  &__image {
+    position: relative;
+    margin-left: 50px;
+
+    @media (max-width: 768px) {
+      margin: 0;
+      display: block;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__controls {
+    position: absolute;
+    font-family: "Prata", sans-serif;
+    right: 100px;
+    bottom: -30px;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    gap: 20px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 380px;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 32px;
+    line-height: 43px;
+  }
+
+  &__desc {
+    margin: 38px 0 0;
+    font-size: 16px;
+    line-height: 150%;
+    color: #444240;
+  }
+
+  &__link {
+    margin: 45px 0 0;
+    padding: 29px 38px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    background: #d4b098;
+  }
+}
